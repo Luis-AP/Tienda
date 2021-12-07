@@ -156,6 +156,10 @@ def ingresar_mercaderia():
         print("Eliga una de las opciones establecidas!!!")
         ingresar_mercaderia()
 
+def aplicar_descuento(producto, tasa):
+	print("Here")
+	pass
+
 def guardar(lista,total):
     fecha = (datetime.now()).date()
     conexion_producto.consulta(f'INSERT INTO Ventas VALUES(NULL,"{fecha}",{total})')
